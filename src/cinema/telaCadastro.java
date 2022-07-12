@@ -1,5 +1,7 @@
 package cinema;
 
+import validador.ValidadorLogin;
+
 /**
  *
  * @author jonas
@@ -161,14 +163,17 @@ public class telaCadastro extends javax.swing.JFrame {
 
     private void jButtonConfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConfirmActionPerformed
         
+        AdaptadorValidador validador = new AdaptadorValidador();
         
         String nome = jTextFieldNome.getText();
         String email = jTextFieldEmail.getText();
         String senha = jPasswordFieldSenha.getText();
         String senhaConfirm = jPasswordFieldConfirmSenha.getText();
         
-        
-        jLabelCadastradoIcon.setVisible(true);
+        if(validador.validadorAdaptado(email, senha, senhaConfirm)){   
+            jLabelCadastradoIcon.setVisible(true);         
+            
+        }
     }//GEN-LAST:event_jButtonConfirmActionPerformed
 
     private void jButtonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelActionPerformed
