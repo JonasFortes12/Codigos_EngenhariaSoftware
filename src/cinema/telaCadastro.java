@@ -1,5 +1,4 @@
-package Codigos_EngenhariaSoftware;
-
+package cinema;
 
 /**
  *
@@ -161,16 +160,20 @@ public class telaCadastro extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextFieldNomeActionPerformed
 
     private void jButtonConfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConfirmActionPerformed
+        
+        
         String nome = jTextFieldNome.getText();
         String email = jTextFieldEmail.getText();
         String senha = jPasswordFieldSenha.getText();
         String senhaConfirm = jPasswordFieldConfirmSenha.getText();
+        
         
         jLabelCadastradoIcon.setVisible(true);
     }//GEN-LAST:event_jButtonConfirmActionPerformed
 
     private void jButtonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelActionPerformed
          instanciaDaTelaCadastro.setVisible(false);
+         jLabelCadastradoIcon.setVisible(false);
     }//GEN-LAST:event_jButtonCancelActionPerformed
 
 

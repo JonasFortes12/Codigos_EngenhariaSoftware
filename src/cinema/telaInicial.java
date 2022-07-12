@@ -1,4 +1,4 @@
-package Codigos_EngenhariaSoftware;
+package cinema;
 
 import java.awt.Color;
 
@@ -150,8 +150,6 @@ public class telaInicial extends javax.swing.JFrame{
                     .addComponent(jLabelFilme05, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(43, Short.MAX_VALUE))
         );
-
-        buttonModoNoturno.getAccessibleContext().setAccessibleDescription("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -1,4 +1,4 @@
-package Codigos_EngenhariaSoftware;
+package cinema;
 
 /**
  *
