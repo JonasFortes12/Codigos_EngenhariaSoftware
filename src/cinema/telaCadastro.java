@@ -85,11 +85,11 @@ public class telaCadastro extends javax.swing.JFrame {
         });
 
         jLabelIcon.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabelIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Codigos_EngenhariaSoftware/img/conecte-se.png"))); // NOI18N
+        jLabelIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinema/img/conecte-se.png"))); // NOI18N
         jLabelIcon.setText("   Cadastre-se");
 
         jLabelCadastradoIcon.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabelCadastradoIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Codigos_EngenhariaSoftware/img/verificado.png"))); // NOI18N
+        jLabelCadastradoIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinema/img/verificado.png"))); // NOI18N
         jLabelCadastradoIcon.setText("Cadastrado");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

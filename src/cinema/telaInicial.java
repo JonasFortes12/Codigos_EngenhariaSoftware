@@ -51,15 +51,15 @@ public class telaInicial extends javax.swing.JFrame{
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setName("telaInicial"); // NOI18N
 
-        jLabelFilme03.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Codigos_EngenhariaSoftware/img/Dr Estranho M.png"))); // NOI18N
+        jLabelFilme03.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinema/img/Dr Estranho M.png"))); // NOI18N
         jLabelFilme03.setText("jLabel1");
         jLabelFilme03.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabelFilme04.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Codigos_EngenhariaSoftware/img/Dumbledore M.png"))); // NOI18N
+        jLabelFilme04.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinema/img/Dumbledore M.png"))); // NOI18N
         jLabelFilme04.setText("jLabel1");
         jLabelFilme04.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabelFilme02.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Codigos_EngenhariaSoftware/img/Cidade Perdida M.png"))); // NOI18N
+        jLabelFilme02.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinema/img/Cidade Perdida M.png"))); // NOI18N
         jLabelFilme02.setText("jLabel1");
         jLabelFilme02.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -71,7 +71,7 @@ public class telaInicial extends javax.swing.JFrame{
             }
         });
 
-        buttonModoNoturno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Codigos_EngenhariaSoftware/img/modo-escuro.png"))); // NOI18N
+        buttonModoNoturno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinema/img/modo-escuro.png"))); // NOI18N
         buttonModoNoturno.setToolTipText("");
         buttonModoNoturno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,23 +79,23 @@ public class telaInicial extends javax.swing.JFrame{
             }
         });
 
-        jLabelFilme06.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Codigos_EngenhariaSoftware/img/thor M.png"))); // NOI18N
+        jLabelFilme06.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinema/img/thor M.png"))); // NOI18N
         jLabelFilme06.setText("jLabel1");
         jLabelFilme06.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabelFilme01.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Codigos_EngenhariaSoftware/img/morbius M.png"))); // NOI18N
+        jLabelFilme01.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinema/img/morbius M.png"))); // NOI18N
         jLabelFilme01.setText("jLabel1");
         jLabelFilme01.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabelFilme07.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Codigos_EngenhariaSoftware/img/sonic M.png"))); // NOI18N
+        jLabelFilme07.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinema/img/sonic M.png"))); // NOI18N
         jLabelFilme07.setText("jLabel1");
         jLabelFilme07.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabelFilme08.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Codigos_EngenhariaSoftware/img/jurassic M.png"))); // NOI18N
+        jLabelFilme08.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinema/img/jurassic M.png"))); // NOI18N
         jLabelFilme08.setText("jLabel1");
         jLabelFilme08.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabelFilme05.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Codigos_EngenhariaSoftware/img/homen do Norte M.png"))); // NOI18N
+        jLabelFilme05.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinema/img/homen do Norte M.png"))); // NOI18N
         jLabelFilme05.setText("jLabel1");
         jLabelFilme05.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -148,7 +148,7 @@ public class telaInicial extends javax.swing.JFrame{
                     .addComponent(jLabelFilme07, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelFilme08, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelFilme05, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();

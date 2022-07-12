@@ -82,7 +82,7 @@
                   <Component id="jLabelFilme08" alignment="3" min="-2" pref="400" max="-2" attributes="0"/>
                   <Component id="jLabelFilme05" alignment="3" min="-2" pref="400" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="43" max="32767" attributes="0"/>
+              <EmptySpace pref="15" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -91,7 +91,7 @@
     <Component class="javax.swing.JLabel" name="jLabelFilme03">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Codigos_EngenhariaSoftware/img/Dr Estranho M.png"/>
+          <Image iconType="3" name="/cinema/img/Dr Estranho M.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel1"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -104,7 +104,7 @@
     <Component class="javax.swing.JLabel" name="jLabelFilme04">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Codigos_EngenhariaSoftware/img/Dumbledore M.png"/>
+          <Image iconType="3" name="/cinema/img/Dumbledore M.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel1"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -117,7 +117,7 @@
     <Component class="javax.swing.JLabel" name="jLabelFilme02">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Codigos_EngenhariaSoftware/img/Cidade Perdida M.png"/>
+          <Image iconType="3" name="/cinema/img/Cidade Perdida M.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel1"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -141,7 +141,7 @@
     <Component class="javax.swing.JButton" name="buttonModoNoturno">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Codigos_EngenhariaSoftware/img/modo-escuro.png"/>
+          <Image iconType="3" name="/cinema/img/modo-escuro.png"/>
         </Property>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
@@ -152,7 +152,7 @@
     <Component class="javax.swing.JLabel" name="jLabelFilme06">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Codigos_EngenhariaSoftware/img/thor M.png"/>
+          <Image iconType="3" name="/cinema/img/thor M.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel1"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -165,7 +165,7 @@
     <Component class="javax.swing.JLabel" name="jLabelFilme01">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Codigos_EngenhariaSoftware/img/morbius M.png"/>
+          <Image iconType="3" name="/cinema/img/morbius M.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel1"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -178,7 +178,7 @@
     <Component class="javax.swing.JLabel" name="jLabelFilme07">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Codigos_EngenhariaSoftware/img/sonic M.png"/>
+          <Image iconType="3" name="/cinema/img/sonic M.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel1"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -191,7 +191,7 @@
     <Component class="javax.swing.JLabel" name="jLabelFilme08">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Codigos_EngenhariaSoftware/img/jurassic M.png"/>
+          <Image iconType="3" name="/cinema/img/jurassic M.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel1"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -204,7 +204,7 @@
     <Component class="javax.swing.JLabel" name="jLabelFilme05">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Codigos_EngenhariaSoftware/img/homen do Norte M.png"/>
+          <Image iconType="3" name="/cinema/img/homen do Norte M.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel1"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
