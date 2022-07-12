@@ -5,60 +5,43 @@
  */
 package cinema;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
-
+import org.junit.Before;
 /**
  *
  * @author jonas
  */
+
+
 public class telaInicialTest {
     
-    public telaInicialTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
+    telaInicial tela;
+   
     @Before
-    public void setUp() {
+    public void setUp() throws Exception {
+	tela = new telaInicial();
     }
     
-    @After
-    public void tearDown() {
-    }
-
-    /**
-     * Test of tornarClaro method, of class telaInicial.
-     */
     @Test
-    public void testTornarClaro() {
-        System.out.println("tornarClaro");
-        telaInicial instance = new telaInicial();
-        instance.tornarClaro();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void testTelaInicial() {
+        assertTrue(tela.estado instanceof telaInicialClaro);
+        
     }
 
-    /**
-     * Test of tornarEscuro method, of class telaInicial.
-     */
     @Test
     public void testTornarEscuro() {
-        System.out.println("tornarEscuro");
-        telaInicial instance = new telaInicial();
-        instance.tornarEscuro();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
+        tela.tornarEscuro();
+        assertTrue(tela.estado instanceof telaInicialEscuro);
+        
+    }
+    @Test
+    public void testTornarClaro() {
+        
+        tela.tornarClaro();
+        assertTrue(tela.estado instanceof telaInicialClaro);
     }
     
 }
