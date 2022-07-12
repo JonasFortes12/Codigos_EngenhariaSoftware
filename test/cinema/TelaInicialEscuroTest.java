@@ -13,23 +13,23 @@ import static org.junit.Assert.*;
  *
  * @author jonas
  */
-public class telaInicialEscuroTest {
+public class TelaInicialEscuroTest {
       
-    telaInicialClaro telaIniCl;
+    TelaInicialClaro telaIniCl;
     
     @Before
     public void setUp() {
-        telaIniCl = new telaInicialClaro();
+        telaIniCl = new TelaInicialClaro();
     }
 
     @Test
     public void testTornarEscuro() {
-        assertTrue(telaIniCl.tornarEscuro() instanceof telaInicialEscuro);
+        assertTrue(telaIniCl.tornarEscuro() instanceof TelaInicialEscuro);
     }
 
     @Test
     public void testTornarClaro() {
-        assertTrue(telaIniCl.tornarClaro() instanceof telaInicialClaro);
+        assertTrue(telaIniCl.tornarClaro() instanceof TelaInicialClaro);
     }
     
 }

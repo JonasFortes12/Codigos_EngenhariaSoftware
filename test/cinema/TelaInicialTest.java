@@ -15,18 +15,18 @@ import org.junit.Before;
  */
 
 
-public class telaInicialTest {
+public class TelaInicialTest {
     
-    telaInicial tela;
+    TelaInicial tela;
    
     @Before
     public void setUp() throws Exception {
-	tela = new telaInicial();
+	tela = new TelaInicial();
     }
     
     @Test
     public void testTelaInicial() {
-        assertTrue(tela.estado instanceof telaInicialClaro);
+        assertTrue(tela.estado instanceof TelaInicialClaro);
         
     }
 
@@ -34,14 +34,14 @@ public class telaInicialTest {
     public void testTornarEscuro() {
        
         tela.tornarEscuro();
-        assertTrue(tela.estado instanceof telaInicialEscuro);
+        assertTrue(tela.estado instanceof TelaInicialEscuro);
         
     }
     @Test
     public void testTornarClaro() {
         
         tela.tornarClaro();
-        assertTrue(tela.estado instanceof telaInicialClaro);
+        assertTrue(tela.estado instanceof TelaInicialClaro);
     }
     
 }

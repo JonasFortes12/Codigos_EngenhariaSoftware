@@ -5,18 +5,18 @@ package cinema;
  *
  * @author jonas
  */
-public class telaCadastro extends javax.swing.JFrame {
+public class TelaCadastro extends javax.swing.JFrame {
 
-    private static telaCadastro instanciaDaTelaCadastro; // armazena a instância da tela de cadastro
+    private static TelaCadastro instanciaDaTelaCadastro; // armazena a instância da tela de cadastro
     
-    private telaCadastro() { //Impede que seja instanciada diretamente pelo construtor
+    private TelaCadastro() { //Impede que seja instanciada diretamente pelo construtor
         initComponents();
         jLabelCadastradoIcon.setVisible(false);
     }
     
-    public static final telaCadastro getInstancia(){
+    public static final TelaCadastro getInstancia(){
         
-        if(instanciaDaTelaCadastro==null) instanciaDaTelaCadastro = new telaCadastro();
+        if(instanciaDaTelaCadastro==null) instanciaDaTelaCadastro = new TelaCadastro();
         return instanciaDaTelaCadastro;
     }
     

@@ -16,6 +16,6 @@ public class AdaptadorValidador {
         return validador.isValidLogin(email, senha, senhaConfirm, "NomeCompleto");
         
     }
-    
+ 
     
 }

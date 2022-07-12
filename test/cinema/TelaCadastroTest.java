@@ -8,19 +8,19 @@ import static org.junit.Assert.*;
  *
  * @author jonas
  */
-public class telaCadastroTest {
+public class TelaCadastroTest {
     
-    telaCadastro telaC;
+    TelaCadastro telaC;
     
     @Before
     public void setUp() {
-        telaCadastro telaC = telaCadastro.getInstancia();
+        TelaCadastro telaC = TelaCadastro.getInstancia();
     }
     
     @Test
     public void testGetInstancia() {
         
-        assertTrue(telaC instanceof telaCadastro);
+        assertTrue(telaC instanceof TelaCadastro);
     }
     
 }

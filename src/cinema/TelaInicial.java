@@ -6,14 +6,14 @@ import java.awt.Color;
  *
  * @author jonas
  */
-public class telaInicial extends javax.swing.JFrame{
+public class TelaInicial extends javax.swing.JFrame{
     
-    protected static estadoTela estado;
+    protected static EstadoTela estado;
     
-    public telaInicial() {
+    public TelaInicial() {
         initComponents();
         getContentPane().setBackground(Color.LIGHT_GRAY);
-        estado = new telaInicialClaro();
+        estado = new TelaInicialClaro();
     }
     
     public void tornarClaro(){
@@ -155,12 +155,12 @@ public class telaInicial extends javax.swing.JFrame{
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCadastroActionPerformed
-        telaCadastro.getInstancia().setVisible(true);
+        TelaCadastro.getInstancia().setVisible(true);
     }//GEN-LAST:event_buttonCadastroActionPerformed
 
     private void buttonModoNoturnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonModoNoturnoActionPerformed
          
-        if(estado instanceof telaInicialClaro){
+        if(estado instanceof TelaInicialClaro){
             this.tornarEscuro();
         }else{
             this.tornarClaro();
