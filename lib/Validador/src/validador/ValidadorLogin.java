@@ -7,7 +7,8 @@ import sun.applet.Main;
 
 public class ValidadorLogin {
 
-	public boolean isValidLogin(String email, String senha, String senhaConfirm, String nome ) {
+    public boolean isValidLogin(String email, String senha, String senhaConfirm, String nome) {
+        
         boolean isEmailIdValid = false;
         boolean isPasswordValid = false;
         

@@ -21,6 +21,7 @@ public class TelaCadastro extends javax.swing.JFrame {
     public static final TelaCadastro getInstancia(){
         
         if(instanciaDaTelaCadastro==null) instanciaDaTelaCadastro = new TelaCadastro();
+        
         return instanciaDaTelaCadastro;
     }
     
