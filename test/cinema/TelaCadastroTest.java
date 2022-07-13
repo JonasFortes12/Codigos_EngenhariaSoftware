@@ -1,5 +1,6 @@
 package cinema;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -11,16 +12,27 @@ import static org.junit.Assert.*;
 public class TelaCadastroTest {
     
     TelaCadastro telaC;
+    TelaCadastro telaCAux;
     
     @Before
     public void setUp() {
-        TelaCadastro telaC = TelaCadastro.getInstancia();
+        telaC = null;
     }
     
     @Test
     public void testGetInstancia() {
-        
+        TelaCadastro telaC = TelaCadastro.getInstancia();
         assertTrue(telaC instanceof TelaCadastro);
     }
+    
+    @Test
+    public void testGetInstanciaAfterFirstInstance() {
+        telaC = TelaCadastro.getInstancia();
+        telaCAux = TelaCadastro.getInstancia();
+        
+        assertTrue(telaC == telaCAux);
+    }
+    
+    
     
 }

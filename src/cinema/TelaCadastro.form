@@ -55,6 +55,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jButtonConfirm" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="jLabelAlertaCadastroInvalido" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="149" max="32767" attributes="0"/>
           </Group>
@@ -88,7 +89,9 @@
                   <Component id="jLabelConfirmSenha" min="-2" pref="36" max="-2" attributes="0"/>
                   <Component id="jPasswordFieldConfirmSenha" min="-2" pref="35" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jLabelAlertaCadastroInvalido" min="-2" pref="66" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jButtonCancel" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
                   <Component id="jButtonConfirm" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
@@ -224,6 +227,18 @@
           <Image iconType="3" name="/cinema/img/verificado.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Cadastrado"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelAlertaCadastroInvalido">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="18" style="2"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/cinema/img/cancel.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Cadastro Inv&#xe1;lido. Verifique Email e Senha de Confirma&#xe7;&#xe3;o"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
   </SubComponents>

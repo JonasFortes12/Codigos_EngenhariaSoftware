@@ -1,5 +1,8 @@
 package cinema;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 
 /**
  *
@@ -12,6 +15,7 @@ public class TelaCadastro extends javax.swing.JFrame {
     private TelaCadastro() { //Impede que seja instanciada diretamente pelo construtor
         initComponents();
         jLabelCadastradoIcon.setVisible(false);
+        jLabelAlertaCadastroInvalido.setVisible(false);
     }
     
     public static final TelaCadastro getInstancia(){
@@ -37,6 +41,7 @@ public class TelaCadastro extends javax.swing.JFrame {
         jButtonConfirm = new javax.swing.JButton();
         jLabelIcon = new javax.swing.JLabel();
         jLabelCadastradoIcon = new javax.swing.JLabel();
+        jLabelAlertaCadastroInvalido = new javax.swing.JLabel();
 
         jRadioButton1.setText("jRadioButton1");
 
@@ -93,6 +98,11 @@ public class TelaCadastro extends javax.swing.JFrame {
         jLabelCadastradoIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinema/img/verificado.png"))); // NOI18N
         jLabelCadastradoIcon.setText("Cadastrado");
 
+        jLabelAlertaCadastroInvalido.setFont(new java.awt.Font("Dialog", 2, 18)); // NOI18N
+        jLabelAlertaCadastroInvalido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinema/img/cancel.png"))); // NOI18N
+        jLabelAlertaCadastroInvalido.setText("Cadastro Inválido. Verifique Email e Senha de Confirmação");
+        jLabelAlertaCadastroInvalido.setToolTipText("");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -119,7 +129,8 @@ public class TelaCadastro extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButtonCancel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonConfirm)))
+                        .addComponent(jButtonConfirm))
+                    .addComponent(jLabelAlertaCadastroInvalido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(149, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -145,7 +156,9 @@ public class TelaCadastro extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelConfirmSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPasswordFieldConfirmSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(102, 102, 102)
+                .addGap(18, 18, 18)
+                .addComponent(jLabelAlertaCadastroInvalido, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonConfirm, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -170,12 +183,16 @@ public class TelaCadastro extends javax.swing.JFrame {
         String senhaConfirm = jPasswordFieldConfirmSenha.getText();
         
         if(validador.validadorAdaptado(email, senha, senhaConfirm)){   
-            jLabelCadastradoIcon.setVisible(true); 
+            jLabelCadastradoIcon.setVisible(true);
+            jLabelAlertaCadastroInvalido.setVisible(false);
             
             jTextFieldNome.setText("");
             jTextFieldEmail.setText("");
             jPasswordFieldSenha.setText("");
             jPasswordFieldConfirmSenha.setText(""); 
+        }else{
+        
+            jLabelAlertaCadastroInvalido.setVisible(true);
         }
     }//GEN-LAST:event_jButtonConfirmActionPerformed
 
@@ -188,6 +205,7 @@ public class TelaCadastro extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonCancel;
     private javax.swing.JButton jButtonConfirm;
+    private javax.swing.JLabel jLabelAlertaCadastroInvalido;
     private javax.swing.JLabel jLabelCadastradoIcon;
     private javax.swing.JLabel jLabelConfirmSenha;
     private javax.swing.JLabel jLabelEmail;
